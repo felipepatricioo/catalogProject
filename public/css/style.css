@@ -118,3 +118,8 @@ nav ul li a:hover {
 footer{
   background-color: rgb(24, 19, 95)
 }
+
+/* CREATE.EJS */
+#form{
+  border: 2px solid black;
+}

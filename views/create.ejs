@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Registration</title>
 </head>
 <body>
-    
+    <main>
+        <header>
+            <nav>
+              <img
+                src="/imgs/spinningCD.gif"
+                alt="cd-spinning-logo"
+                width="50"
+                height="50"
+                id="logo1"
+              />
+              <ul>
+                <li>
+                  <img src="/imgs/home1.png"
+                  onmouseover="this.src='/imgs/home2.png'"
+                  onmouseout="this.src='/imgs/home1.png'"
+                  class="menubar">
+                </li>
+                <li>
+                  <a href="/create">
+                  <p>register</p>
+                </a>
+                </li>
+                <li>
+                  <p>Home</p>
+                </li>
+                <li>
+                  <input type="text" class="searchTerm" placeholder="Search...">
+                  <button type="submit" class="searchButton">
+                </li>
+              </ul>
+            </nav>
+    <section id="backgroundAlbums">
+        <div id="form">
+        <form method="POST" action="/create">
+            <label for="form">Insert the mane of your album!</label>
+            <input type="text" placeholder="Insert the mane of your album!" name="name" id="inputAlbum" autocomplete="off" class="FORM" required> 
+        </form>
+    </div>
+    </section>
+</main>
 </body>
 </html>
