@@ -20,7 +20,7 @@ app.get("/create", (req, res) => {
 
 
 app.get("/update", (req, res) => {
-    res.render("../views/edit");
+    res.render("../views/update");
   });
 
 
