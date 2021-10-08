@@ -26,7 +26,7 @@ ul{
     height: 100vh;
     width: 100%;
     text-align: center;
-    justify-content: auto;
+    position: absolute;
     margin:0px;
     padding:0px;
 }
@@ -42,3 +42,39 @@ ul{
 #teste:hover{
     transform: scale(1.1);
 }
+
+.presentationText{
+    font-style: italic;
+    color: white;
+    text-shadow: -1px -1px 0 rgb(61, 1, 117), 1px -1px 0 rgb(61, 1, 117), -1px 1px 0 rgb(61, 1, 117), 1px 1px 0 rgb(61, 1, 117);
+    font-size: large;
+    text-align: center;
+    top: 350px;
+    left: 110px;
+    position: absolute;
+}
+
+.teste{
+    margin:70px
+}
+
+.teste .btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #9e0c76;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn:hover{
+    background-color: rgb(68, 7, 68);
+  }
