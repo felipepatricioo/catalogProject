@@ -20,22 +20,25 @@ ul {
 }
 
 nav ul li {
-    padding: 1rem;
-  }
-
-
-
-nav ul li a:hover {
- color: white; 
+  padding: 1rem;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: rgb(240, 108, 240);
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: 0.5s;
+}
 
-.menubar{
+nav ul li a:hover {
+  color: white;
+}
+
+.menubar {
   width: 150px;
   height: 50px;
 }
-
-
 
 #backgroundAlbums {
   background-image: url("/imgs/albumcover2mk1.png");
@@ -49,13 +52,13 @@ nav ul li a:hover {
   padding: 0px;
 }
 
-#teste{
+#teste {
+  text-align: center;
+  padding: 40px;
+  margin-top: 40px;
 
-    text-align: center;
-    padding: 40px;
-    margin-top:40px;
-
-    transition: transform 0.2s;}
+  transition: transform 0.2s;
+}
 
 #teste:hover {
   transform: scale(1.1);
@@ -70,7 +73,6 @@ nav ul li a:hover {
   text-align: center;
   top: 350px;
   left: 110px;
-
 }
 
 .teste {
@@ -93,33 +95,32 @@ nav ul li a:hover {
   background-color: rgb(68, 7, 68);
 }
 
-#artistLayout{
-  display:flex;
+#artistLayout {
+  display: flex;
   flex-direction: row;
 }
 
-#kanye1{
+#kanye1 {
   width: 1000px;
   height: 400px;
 }
 
-.presentationText2{
-    font-style: italic;
+.presentationText2 {
+  font-style: italic;
   color: white;
   text-shadow: -1px -1px 0 rgb(255, 0, 191), 1px -1px 0 rgb(255, 0, 191),
     -1px 1px 0 rgb(255, 0, 191), 1px 1px 0 rgb(255, 0, 191);
   font-size: xx-large;
   text-align: center;
   padding-top: 150px;
-  margin:0px;
-
+  margin: 0px;
 }
 
-footer{
-  background-color: rgb(24, 19, 95)
+footer {
+  background-color: rgb(24, 19, 95);
 }
 
 /* CREATE.EJS */
-#form{
+#form {
   border: 2px solid black;
 }
