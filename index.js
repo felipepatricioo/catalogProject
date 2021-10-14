@@ -1,12 +1,14 @@
 const express = require('express');
 const path = require("path");
+require('dotenv').config();
+const db = require("./models/database")
 
 const app = express();
-const port =  process.env.PORT || 3000
+const port =  process.env.PORT;
 
 app.set("view engine", "ejs");
-app.use(express.static(path.join(__dirname, "public")));
-app.use(express.urlencoded());
+app.use(express.static(path.join(__dirname, "/views/public")));
+app.use(express.urlencoded({ extended: true }));
 
 
 app.get("/delete", (req, res) => {
@@ -25,13 +27,15 @@ app.get("/update", (req, res) => {
 
 
 app.get("/read", (req, res) => {
-    res.render("../views/details");
+    res.render("../views/read");
   });
 
 
 app.get("/", (req, res) => {
-    res.render('index.ejs')
+
+  res.render('index.ejs')
 })
 
+db.connected()
 app.listen(port, () =>
   console.log(`Server listening in http://localhost:${port}`));
