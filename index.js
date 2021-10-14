@@ -16,9 +16,15 @@ app.get("/delete", (req, res) => {
   });
 
 
+
+
 app.get("/create", (req, res) => {
-    res.render("../views/create");
-  });
+    setTimeout(() => {    
+      message = "";  
+    }, 1000);
+
+    res.render("../views/create", {message: message});
+});
 
 
 app.get("/update", (req, res) => {
@@ -32,7 +38,6 @@ app.get("/read", (req, res) => {
 
 
 app.get("/", (req, res) => {
-
   res.render('index.ejs')
 })
 
