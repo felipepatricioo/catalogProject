@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Registration</title>
+</head>
+<body>
+  <main>
+    <header>
+      <a href="#navigationBar">
+        <img
+        src="/imgs/spinningCD.gif"
+        alt="cd-spinning-logo"
+        width="50"
+        height="50"
+        id="logo1"
+      />
+    </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="/"">
+            <p>HOME</p>
+            </a>
+          </li>
+          <li>
+            <a href="/create">
+            <p>REGISTER</p>
+          </a>
+          </li>
+          <li>
+            <a href="/read">
+            <p>CATALOG</p>
+            </a>
+          </li>
+          <li>
+            <input type="text" class="searchTerm" placeholder="Search...">
+            <button type="submit" class="searchButton">
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="backgroundAlbums">
+        <form method="POST">
+            <label for="field1">
+              <span>Artist Name 
+                <span class="required">*</span>
+              </span>
+            <input type="text" class="input-field" name="artist_name" value="<%= albums4.artist_name %>" />
+            </label>
+            <label for="field2">
+              <span>Album Name 
+                <span class="required">*</span>
+              </span>
+              <input type="text" class="input-field" name="album_name" value="<%= albums4.album_name %>" />
+            </label>
+            <label for="field3">
+              <span>Album Cover 
+                <span class="required">*</span>
+              </span>
+            <input type="text" class="input-field" name="album_cover" value="<%= albums4.album_cover %>" />
+            </label>
+            <label for="field4">
+              <span>Release Date</span>
+              <input type="date" class="input-field" name="release_date" value="<%= albums4.release_date %>" />
+            </label>
+            <button type="submit"> Update Albums!</button>
+          </form>
+
+    </section>
+</main>
+</body>
+<script src="/js/script.js"></script>
+</html>

@@ -43,10 +43,12 @@
         </ul>
       </nav>
     </header>
-    <section id="message">    
-      <p>Album successfully updated!</p> 
+    <% if(message != ""){ %>
+    <section id="message"> 
+            <p><%= message %></p>
       <span id="close">&times;</span>
     </section>
+    <% } %>   
     <section id="backgroundAlbums">
         <div class="form">
         <form method="POST">
@@ -54,34 +56,25 @@
             <span>Artist Name 
               <span class="required">*</span>
             </span>
-          <input type="text" class="input-field" name="field1" value="" />
+          <input type="text" class="input-field" name="artist_name" value="" />
           </label>
           <label for="field2">
             <span>Album Name 
               <span class="required">*</span>
             </span>
-            <input type="text" class="input-field" name="field2" value="" />
+            <input type="text" class="input-field" name="album_name" value="" />
           </label>
           <label for="field3">
-            <span>Release Date</span>
-            <input type="date" class="input-field" name="field3" value="" />
+            <span>Album Cover 
+              <span class="required">*</span>
+            </span>
+          <input type="text" class="input-field" name="album_cover" value="" />
           </label>
-
           <label for="field4">
-            <span>Rating</span>
-            <select name="field4" class="select-field">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>
-         </label>
+            <span>Release Date</span>
+            <input type="date" class="input-field" name="release_date" value="" />
+          </label>
+          <button type="submit"> Update Albums!</button>
         </form>
     </div>
     </section>

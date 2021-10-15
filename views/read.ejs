@@ -45,8 +45,14 @@
       </header>
       <section id="backgroundAlbums">
           <section id="myAlbums">
-              
-
+              <% albums1.forEach(itemAlbums =>{ %>
+                <p> <%= itemAlbums.album_name %> </p>
+                <img src="<%= itemAlbums.album_cover %>">
+                <p> <%= itemAlbums.artist_name %> </p>
+                <p> <%= itemAlbums.release_date %> </p>
+                <a href="/update/<%=itemAlbums.id%>"><button>Edit!</button></a> 
+                <a href="/delete/<%=itemAlbums.id%>"><button>Delete!</button></a>   
+               <% }) %>
           </section>
 
     </section>
