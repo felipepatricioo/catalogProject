@@ -23,6 +23,8 @@ app.get("/create", (req, res) => {
 })
 
 app.post('/create', async (req,res) =>{
+  const { album_name, artist_name, release_date, album_cover} = req.body;
+
   if (!artist_name) {
     res.render("../views/create", {
       message: "Artist Name is mandatory",
@@ -66,6 +68,7 @@ app.post('/create', async (req,res) =>{
   }
 
 });
+
 
 
 app.get('/read', async (req,res) => {

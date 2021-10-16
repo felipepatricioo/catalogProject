@@ -32,7 +32,7 @@
             </a>
             </li>
             <li>
-              <a href="/update">
+              <a href="/read">
               <p>CATALOG</p>
               </a>
             </li>
@@ -43,7 +43,8 @@
           </ul>
         </nav>
       </header>
-      <section id="backgroundAlbums">
+      <section id="backgroundAlbums2">
+        <section id="teste100">
           <section id="myAlbums">
               <% albums1.forEach(itemAlbums =>{ %>
                 <p> <%= itemAlbums.album_name %> </p>
@@ -54,8 +55,10 @@
                 <a href="/delete/<%=itemAlbums.id%>"><button>Delete!</button></a>   
                <% }) %>
           </section>
+        </section>
 
     </section>
 </main>
+<footer>Website made by <a href="https://github.com/felipepatricioo" target="_blank">Felipe</a> and <a href="https://github.com/AndreiaLima19" target="_blank">Andreia</a>!!</footer>
 </body>
 </html>
