@@ -23,17 +23,49 @@ app.get("/create", (req, res) => {
 })
 
 app.post('/create', async (req,res) =>{
-    const { album_name, artist_name, release_date, album_cover} = req.body;
+  if (!artist_name) {
+    res.render("../views/create", {
+      message: "Artist Name is mandatory",
+    });
+  }
+
+  if (!album_name) {
+    res.render("../views/create", {
+      message: "Album Name is mandatory",
+    });
+  }
+
+  if (!album_cover) {
+    res.render("../views/create", {
+      message: "Album Cover is mandatory",
+    });
+  }
+
+  if (!release_date) {
+    res.render("../views/create", {
+      message: "Release Date is mandatory",
+    });
+  }
+
+  try {
     const albums2 = await albums.create({
         album_name:album_name,
         artist_name:artist_name,
         release_date:release_date,
         album_cover:album_cover,
-});
-  message = "Album sucessfully updated!"
-res.render("../views/create", {message: message})
-});
+    });
 
+    message = "Album sucessfully updated!";
+    res.render("../views/create", {message: message});
+
+  } catch (err) {
+    console.log(err);
+
+    message = "Error: Album not registered";
+    res.render("../views/create", {message: message});
+  }
+
+});
 
 
 app.get('/read', async (req,res) => {
