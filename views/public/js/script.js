@@ -8,3 +8,12 @@ closeMessage.addEventListener("click", function (){
 setTimeout(() => {
     message.style.display = "none"
 }, 5000)
+
+
+function deleteFunction() {
+    confirm("Are you sure you want to DELETE this album?");
+  }
+
+function updateFunction(){
+    confirm("Are you sure this changes are OK?")
+}
