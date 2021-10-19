@@ -15,5 +15,5 @@ function deleteFunction() {
   }
 
 function updateFunction(){
-    confirm("Are you sure this changes are OK?")
+    confirm("Are you this changes are OK?")
 }
