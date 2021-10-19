@@ -10,10 +10,11 @@ setTimeout(() => {
 }, 5000)
 
 
-function deleteFunction() {
-    confirm("Are you sure you want to DELETE this album?");
-  }
+// function deleteFunction() {
+//     confirm("Are you sure you want to DELETE this album?");
+//     if 
+//   }
 
-function updateFunction(){
-    confirm("Are you this changes are OK?")
-}
+// function updateFunction(){
+//     confirm("Are you this changes are OK?")
+// }

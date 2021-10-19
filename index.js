@@ -139,11 +139,16 @@ app.post('/update/:id', async (req,res) =>{
 app.get('/delete/:id', async (req,res) => {
   const albums5 = await albums.findByPk(req.params.id);
 
+  // let teste = confirm("Are you sure you want to DELETE this album?");
+
+  // if (teste == true){
   await albums5.destroy();
+  // }
 
   res.redirect("/read");
 
 });
+
 
 app.get("/", (req, res) => {
   res.render('index.ejs')
