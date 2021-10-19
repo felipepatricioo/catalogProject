@@ -44,19 +44,23 @@
         </nav>
       </header>
       <section id="backgroundAlbums2">
-        <section id="teste100">
-          <section id="myAlbums">
-              <% albums1.forEach(itemAlbums =>{ %>
-                <p> <%= itemAlbums.album_name %> </p>
-                <img src="<%= itemAlbums.album_cover %>">
-                <p> <%= itemAlbums.artist_name %> </p>
-                <p> <%= itemAlbums.release_date %> </p>
-                <a href="/update/<%=itemAlbums.id%>"><button>Edit!</button></a> 
-                <a href="/delete/<%=itemAlbums.id%>"><button onclick="deleteFunction()">Delete!</button></a>   
-               <% }) %>
+        <section id="albums">
+          <% albums1.forEach(itemAlbums =>{ %>
+            <section id="myAlbums">
+            <article>
+            <p> <%= itemAlbums.album_name %> </p>
+            <img src="<%= itemAlbums.album_cover %>">
+            <p> <%= itemAlbums.artist_name %> </p>
+            <p> <%= itemAlbums.release_date %> </p>
+            <a href="/update/<%=itemAlbums.id%>"><button>Edit!</button></a>
+            <a href="/delete/<%=itemAlbums.id%>"><button onclick="deleteFunction()">Delete!</button></a>
+          </article>
           </section>
-        </section>
+           <% }) %>
+      </section>
+    </section>
 
+</section>
     </section>
 </main>
 <footer>Website made by <a href="https://github.com/felipepatricioo" target="_blank">Felipe</a> and <a href="https://github.com/AndreiaLima19" target="_blank">Andreia</a>!!</footer>
