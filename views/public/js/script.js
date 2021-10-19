@@ -12,7 +12,6 @@ setTimeout(() => {
 
 // function deleteFunction() {
 //     confirm("Are you sure you want to DELETE this album?");
-//     if 
 //   }
 
 // function updateFunction(){
