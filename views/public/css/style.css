@@ -190,8 +190,6 @@ footer{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width:100px;
-  height:100px;
   color:white;
   text-align: center;
   padding: 30px;
@@ -210,6 +208,8 @@ footer{
 .albumCover{
   width:100px;
   height:100px;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* .albumDisplay{
